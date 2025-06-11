@@ -1,5 +1,7 @@
 require('dotenv').config();
 const nodemailer = require('nodemailer');
+const { fetchCourses } = require('../scraper/app.js'); // Importa a função de busca de cursos
+const { generateEmailHtml } = require('../scraper/emailTemplate.js');
 
 // Criação do transportador de e-mail com base nas variáveis de ambiente
 const transporter = nodemailer.createTransport({
@@ -16,11 +18,11 @@ const transporter = nodemailer.createTransport({
 async function sendEmail() {
   try {
     const info = await transporter.sendMail({
-      from: `"Nome do Remetente" <${process.env.EMAIL_USER}>`, // Remetente
-      to: 'geraldoj8@gmail.com', // Lista de destinatários
-      subject: 'Assunto do E-mail', // Assunto
-      text: 'Conteúdo do e-mail em texto simples', // Corpo do e-mail em texto simples
-      html: '<b>Conteúdo do e-mail em HTML</b>', // Corpo do e-mail em HTML
+      from: `"Minha fonte" <${process.env.EMAIL_USER}>`, // Remetente
+      to: 'melonascmento@gmail.com', // Lista de destinatários
+      subject: 'Novos cursos disponíveis!', // Assunto
+      text: 'Veja os cursos gratuitos que separei para você.', // Corpo do e-mail em texto simples
+      html: htmlContent, // Corpo do e-mail em HTML
     });
 
     console.log('E-mail enviado: %s', info.messageId);
