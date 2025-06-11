@@ -31,5 +31,13 @@ async function sendEmail() {
   }
 }
 
-// Dispara o e-mail
-sendEmail();
+async function main() {
+  // Busca cursos e gera o HTML
+  const courseList = await fetchCourses();
+  const htmlContent = generateEmailHtml(courseList);
+  // Envia o email com o conteúdo gerado
+  await sendEmail(htmlContent);
+}
+
+// Executa o fluxo
+main();
