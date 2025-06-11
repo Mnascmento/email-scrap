@@ -1,0 +1,30 @@
+# 🕸️ Web Scraping de Cursos Gratuitos com Envio por E-mail
+
+Este projeto realiza **web scraping** na plataforma [Class Central](https://www.classcentral.com/) para buscar **cursos gratuitos de tecnologia em português**. Em seguida, os cursos encontrados são organizados em um template HTML estilizado e enviados por e-mail de forma automatizada.
+
+---
+
+## ✨ Funcionalidades
+
+- 🔎 Scraping de cursos gratuitos em tecnologia disponíveis no Brasil
+- 🧠 Filtro por idioma: apenas cursos em português
+- 📬 Geração de e-mail HTML com os cursos encontrados
+- 📤 Envio automático via SMTP com `nodemailer`
+- 📁 Separação em módulos: scraping, template e envio
+
+---
+
+## 🧱 Estrutura do Projeto
+
+
+---
+
+
+---
+
+## ⚙️ Como Usar
+
+### 1. Clone o repositório (https://github.com/Mnascmento/email-scrap)
+### 2. Instale as dependências (npm install)
+### 3. Adapte o arquivo .env com as credenciais do seu e-mail
+### 4. Execute o projeto (npm start)
