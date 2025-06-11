@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Função para enviar o e-mail
-async function sendEmail() {
+async function sendEmail(htmlContent) {
   try {
     const info = await transporter.sendMail({
       from: `"Minha fonte" <${process.env.EMAIL_USER}>`, // Remetente
@@ -34,8 +34,8 @@ async function sendEmail() {
 async function main() {
   // Busca cursos e gera o HTML
   const courseList = await fetchCourses();
-  const htmlContent = generateEmailHtml(courseList);
-  // Envia o email com o conteúdo gerado
+  const htmlContent = generateEmailHtml(courseList);// Envia o email com o conteúdo gerado
+  console.log(htmlContent);   
   await sendEmail(htmlContent);
 }
 
