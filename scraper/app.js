@@ -39,7 +39,7 @@ async function fetchCourses() {
 
             const contemPortugues = palavrasPortugues.some(palavra => textoTotal.includes(palavra));
 
-            if (title && link && contemPortugues && courseList.length < 10) {
+            if (title && link && contemPortugues && courseList.length < 20) {
                 courseList.push({
                     title,
                     platform,
