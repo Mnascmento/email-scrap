@@ -12,13 +12,6 @@ Este projeto realiza **web scraping** na plataforma [Class Central](https://www.
 - 📤 Envio automático via SMTP com `nodemailer`
 - 📁 Separação em módulos: scraping, template e envio
 
----
-
-🧱 Estrutura do Projeto
-
-
----
-
 
 ---
 
