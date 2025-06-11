@@ -13,7 +13,7 @@ function generateEmailHtml(courseList) {
             .course-title {
                 font-size: 18px;
                 font-weight: bold;
-                color: #2c3e50;
+                color:rgb(126, 41, 119);
                 text-decoration: none;
             }
             .course-platform {
