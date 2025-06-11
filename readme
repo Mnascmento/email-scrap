@@ -21,3 +21,7 @@ Este projeto realiza **web scraping** na plataforma [Class Central](https://www.
  2. Instale as dependências (npm install)
  3. Adapte o arquivo .env com as credenciais do seu e-mail
  4. Execute o projeto (npm start)
+
+📬 Contato
+Feito com 💜 por Maria Nascimento
+🔗 LinkedIn: https://www.linkedin.com/in/mariamelonascimento/
